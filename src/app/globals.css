@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.servicebullet,
+.serviceactivebullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #999999;
+  opacity: 0.5;
+  display: inline-block;
+  margin-inline: 4px;
+  cursor: pointer;
+}
+
+.serviceactivebullet {
+  background: #a4d269;
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+}
