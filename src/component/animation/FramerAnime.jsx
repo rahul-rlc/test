@@ -1,13 +1,22 @@
 "use client";
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { itemAnim, leftToRight, rightToLeft } from "@/lib/animation";
+import {
+  itemAnim,
+  leftToRight,
+  rightToLeft,
+  stager,
+  boxVariant,
+  listVariant,
+} from "@/lib/animation";
 import { useInView } from "react-intersection-observer";
+import { CardItem } from "../home/portfolio";
 
 export function FrameAnime({
   variant = "primary",
   className,
   view = 0.3,
+  data,
   ...props
 }) {
   const { ref, inView } = useInView({
@@ -21,8 +30,26 @@ export function FrameAnime({
     secondary: itemAnim,
     rightToLeft: rightToLeft,
     leftToRight: leftToRight,
+    stager: stager,
   };
 
+  if (variant === "stager") {
+    return (
+      <motion.div
+        ref={ref}
+        className="px-6 gap-6 grid grid-cols-1 md:grid-cols-3 justify-between max-w-[1200px] mx-auto"
+        variants={boxVariant}
+        initial="hidden"
+        animate={inView && "visible"}
+      >
+        {data.map((item, index) => (
+          <motion.div key={index} variants={listVariant}>
+            <CardItem data={item} />
+          </motion.div>
+        ))}
+      </motion.div>
+    );
+  }
   if (variant === "primary") {
     return (
       <motion.div

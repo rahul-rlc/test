@@ -7,7 +7,7 @@ import {
   Herosection,
   Whyus,
   OurClients,
-} from '@/component';
+} from "@/component";
 
 export default function Home() {
   return (
