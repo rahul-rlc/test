@@ -88,7 +88,7 @@ function page() {
     },
   ];
   return (
-    <div className="flex flex-col gap-14 py-16">
+    <div className="flex flex-col gap-14 py-16 px-6">
       <Hero text={'Projects'} />
       <div className="grid grid-cols-1 gap-10">
         {projects.map((item, index) => (
@@ -101,7 +101,7 @@ function page() {
                 key={index}
               >
                 <div
-                  className={`bg-[#f5f5f5] h-[335px] w-full overflow-hidden rounded-[45px] relative col-span-3 `}
+                  className={`bg-[#f5f5f5] h-[335px] w-full overflow-hidden rounded-[45px] relative col-span-1 md:col-span-3 `}
                 >
                   {item.type ? (
                     <Image
@@ -126,7 +126,7 @@ function page() {
                     />
                   )}
                 </div>
-                <div className="col-span-2 text-white bg-[#003362] rounded-[45px] p-8">
+                <div className="col-span-1 md:col-span-2 text-white bg-[#003362] rounded-[45px] p-8">
                   <h3 className="text-3xl font-bold ">{item.title}</h3>
                   <p className="text-base font-medium mt-4">
                     {item.description}

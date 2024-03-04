@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Hero({ imgfile, text }) {
   return (
-    <div className="px-6 pt-20 md:pt-32">
+    <div className="pt-20 md:pt-32">
       <div className="max-w-[1186px] h-[245px] md:h-[336.78px] relative mx-auto ">
         <Image
           src={imgfile ? imgfile : '/assets/images/about/be.png'}
