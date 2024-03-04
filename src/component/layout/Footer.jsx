@@ -17,7 +17,7 @@ const Footer = () => {
     },
     {
       name: 'Awards',
-      link: '/awards',
+      link: '/about/#awards',
     },
     {
       name: 'Contact Us',
@@ -27,19 +27,19 @@ const Footer = () => {
   const service = [
     {
       name: 'Design & Consultation',
-      link: '/about',
+      link: '/#services',
     },
     {
       name: 'Supply & Installation',
-      link: '/projects',
+      link: '/#services',
     },
     {
       name: 'Commissioning & Optimization',
-      link: '/awards',
+      link: '/#services',
     },
     {
       name: 'Ongoing Maintenance',
-      link: '/contactus',
+      link: '/#services',
     },
   ];
   return (
@@ -51,7 +51,7 @@ const Footer = () => {
               <Image
                 width={170}
                 height={48}
-                src="/assets/logo/logootrans.png"
+                src="/assets/logo/logowhite.svg"
                 alt="City Solar"
                 className="aspect-[170/48]"
               />

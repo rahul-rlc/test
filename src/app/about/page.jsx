@@ -1,31 +1,31 @@
-import React from "react";
-import Image from "next/image";
-import Button from "@/component/button/Button";
-import Hero from "@/component/heros/Hero";
-import Carasule from "@/ui/Carasule";
-import { FrameAnime } from "@/component/animation/FramerAnime";
+import React from 'react';
+import Image from 'next/image';
+import Button from '@/component/button/Button';
+import Hero from '@/component/heros/Hero';
+import Carasule from '@/ui/Carasule';
+import { FrameAnime } from '@/component/animation/FramerAnime';
 
 const awards = [
   {
-    img: "/assets/images/about/awards/a1.png",
+    img: '/assets/images/about/awards/a1.png',
   },
   {
-    img: "/assets/images/about/awards/a2.png",
+    img: '/assets/images/about/awards/a2.png',
   },
   {
-    img: "/assets/images/about/awards/a3.png",
+    img: '/assets/images/about/awards/a3.png',
   },
   {
-    img: "/assets/images/about/awards/a4.png",
+    img: '/assets/images/about/awards/a4.png',
   },
   {
-    img: "/assets/images/about/awards/a5.png",
+    img: '/assets/images/about/awards/a5.png',
   },
 ];
 function page() {
   return (
     <div className="font-outfit">
-      <Hero imgfile={"/assets/images/about/be.png"} text={"About Us"} />
+      <Hero imgfile={'/assets/images/about/be.png'} text={'About Us'} />
       <div className="py-10 px-6 pt-[82px]">
         <div className="mx-auto max-w-[1200px] grid grid-cols-1 md:grid-cols-5 gap-12">
           <div className="overflow-hidden col-span-1 md:col-span-2 rounded-[48px]">
@@ -36,7 +36,7 @@ function page() {
                   alt="City Solar About us"
                   fill
                   style={{
-                    borderRadius: "48px",
+                    borderRadius: '48px',
                   }}
                 />
               </FrameAnime>
@@ -79,7 +79,7 @@ function page() {
         </div>
       </div>
 
-      <div className="py-10">
+      <div className="py-10" id="awards">
         <h2 className="text-center font-outfit text-primary font-semibold text-3xl md:text-5xl">
           Awards
         </h2>
@@ -96,7 +96,7 @@ function page() {
               <p className="w-full lg:w-[488px] text-white text-[46px] font-semibold font-outfit leading-[54px] pb-[42px]">
                 Help your community go greener through our referral program
               </p>
-              <Button text={"Contact us"} />
+              <Button text={'Contact us'} />
             </div>
             <div className="w-1/2 relative hidden lg:block ">
               <Image

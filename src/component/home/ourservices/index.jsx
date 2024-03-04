@@ -1,35 +1,35 @@
-import React from "react";
-import ServiceCard from "./ServiceCard";
-import { FrameAnime } from "@/component/animation/FramerAnime";
+import React from 'react';
+import ServiceCard from './ServiceCard';
+import { FrameAnime } from '@/component/animation/FramerAnime';
 
 const Ourservices = () => {
   const data = [
     {
-      image: "/assets/images/home/img3.png",
-      heading: "Design & Consultation",
+      image: '/assets/images/home/img3.png',
+      heading: 'Design & Consultation',
       description:
-        "Our experts customize solar solutions to your unique needs.",
+        'Our experts customize solar solutions to your unique needs.',
     },
     {
-      image: "/assets/images/home/img8.png",
-      heading: "Commissioning & Optimisation",
+      image: '/assets/images/home/img8.png',
+      heading: 'Commissioning & Optimisation',
       description:
-        "We handle commissioning and ensure continuous optimization for peak performance.",
+        'We handle commissioning and ensure continuous optimization for peak performance.',
     },
     {
-      image: "/assets/images/home/img10.jpeg",
-      heading: "Ongoing Maintenance",
-      description: "We offer maintenance to optimize your solar investment.",
+      image: '/assets/images/home/img10.jpeg',
+      heading: 'Ongoing Maintenance',
+      description: 'We offer maintenance to optimize your solar investment.',
     },
     {
-      image: "/assets/images/home/img5.png",
-      heading: "Supply & Installation",
+      image: '/assets/images/home/img5.png',
+      heading: 'Supply & Installation',
       description:
-        "We supply and install top-quality solar systems for maximum efficiency.",
+        'We supply and install top-quality solar systems for maximum efficiency.',
     },
   ];
   return (
-    <div className="px-6  max-w-[1200px] mx-auto">
+    <div className="px-6  max-w-[1200px] mx-auto" id="services">
       <FrameAnime view={0.2}>
         <div>
           <h2 className="text-primary uppercase text-sm md:text-base font-semibold">

@@ -126,7 +126,7 @@ export default function Header() {
             <Image
               width={170}
               height={48}
-              src="/assets/logo/logoo.png"
+              src="/assets/logo/logo.svg"
               alt="City Solar"
               className="aspect-[170/48]"
             />
