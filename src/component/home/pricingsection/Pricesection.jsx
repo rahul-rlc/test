@@ -1,22 +1,22 @@
-import { FrameAnime } from "@/component/animation/FramerAnime";
-import React from "react";
-import { FaCheck } from "react-icons/fa6";
+import { FrameAnime } from '@/component/animation/FramerAnime';
+import React from 'react';
+import { FaCheck } from 'react-icons/fa6';
 
 const Howwedoit = () => {
   const priceData = [
     {
-      kwp: "10",
-      price: "7,260",
+      kwp: '10',
+      price: '7,260',
       bg: false,
     },
     {
-      kwp: "15",
-      price: "10,890",
+      kwp: '15',
+      price: '10,890',
       bg: true,
     },
     {
-      kwp: "20",
-      price: "14,520",
+      kwp: '20',
+      price: '14,520',
       bg: false,
     },
   ];
@@ -88,7 +88,7 @@ const Howwedoit = () => {
               20kWp
             </div>
             <div className=" text-center text-primary text-[42px] font-extrabold ">
-              AED145,20
+              AED14,520
             </div>
             <div className=" text-center text-lightgrey text-sm font-medium mt-10">
               Estimated saving
